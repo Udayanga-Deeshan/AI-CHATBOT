@@ -7,26 +7,43 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>ConvoBot-ChatBot</title>
 </head>
 <body>
+  <div class="container">
+    <div class="bot-container">
+      <img src="./images/mainbot-removebg-preview.png" alt="">
+    </div>
+    
     <div class="chat-window">
         <div class="chat-header d-flex justify-content-between align-items-center">
           <h5>ConvoBot</h5>
-          <select id="participantSelector" class="form-select form-select-sm w-50" onchange="selectChatUser()">
+          <!-- <select id="participantSelector" class="form-select form-select-sm w-50" onchange="selectChatUser()">
             <option value="me">Me</option>
             <option value="friend">Friend</option>
-          </select>
+          </select> -->
         </div>
         <div class="chat-messages" id="chatMessages">
-                <h5 style="text-align: end;" ></h5>
+                <h5 ></h5>
                 <h5 style="text-align: start;"> </h5>
         </div>
+        <!-- <div class="chat-messages" id="chatMessages">
+          <div class="message robot">
+              <div class="icon"></div>
+              <h5></h5>
+          </div>
+          <div class="message user">
+              <h5></h5>
+              <div class="icon"></div>
+          </div>
+      </div> -->
+      
         <div class="chat-input">
           <input type="text" id="messageInput" placeholder="Type a message...">
           <button onclick="sendMessage()">Send</button>
         </div>
       </div>
+  </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/markdown-it/8.2.2/markdown-it.min.js"></script>
